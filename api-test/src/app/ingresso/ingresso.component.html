@@ -1,0 +1,12 @@
+<table style="width:100%">
+  <tr>
+    <th>Comprador</th>
+    <th>Lote</th>
+    <th>Produto</th>
+  </tr>
+  <tr *ngFor="let contrato of contratos">
+    <td>{{contrato?.contratoItem?.contrato?.compradorNome}}</td>
+    <td>{{contrato?.contratoItem?.eventoLoteProduto?.eventoLote?.descricao}}</td>
+    <td>{{contrato?.contratoItem?.eventoLoteProduto?.eventoProduto?.descricao}} {{contrato?.contratoItem?.eventoLoteProduto?.eventoProduto?.grupo}}</td>
+  </tr>
+</table>
